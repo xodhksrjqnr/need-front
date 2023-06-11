@@ -8,7 +8,7 @@ import $ from "jquery";
 function PostList({postListApi}) {
     const [posts, setPosts] = useState([]);
     const postNum = useRef(0);
-    const prePostListApi = useRef('http://3.39.194.43:8080/posts?');
+    const prePostListApi = useRef('http://15.164.224.185:8080/posts?');
     const [ref, inView] = useInView({threshold:0.2});
 
     useEffect(() => {
