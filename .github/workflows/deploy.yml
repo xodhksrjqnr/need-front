@@ -51,7 +51,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: taewakim/need_front_server:latest
+          tags: taewakim/need_frontend_server:latest
 
   deploy:
     runs-on: [ self-hosted, label-go2 ]
