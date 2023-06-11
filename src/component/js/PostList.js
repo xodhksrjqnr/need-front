@@ -43,6 +43,7 @@ function PostList({postListApi}) {
                     }
             });
         }
+        // eslint-disable-next-line
     }, [inView]);
 
     return (
