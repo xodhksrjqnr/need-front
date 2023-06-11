@@ -1,0 +1,66 @@
+name: main-deploy-action
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - 'README.md'
+      
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - 'README.md'
+      
+permissions:
+      id-token: write
+      contents: read
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Chackout
+        uses: actions/checkout@v3
+    
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+          
+      - name: Install modules
+        run: npm install
+        
+      - name: Build project
+        run: npm run build
+        
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        
+      - name: Docker Hub Login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
+      - name: Publish Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: taewakim/need_front_server:latest
+
+  deploy:
+    runs-on: [ self-hosted, label-go ]
+    needs: build
+    
+    steps:
+      - name: Docker Pull
+        run: |
+          docker stop frontend_server && docker rm frontend_server
+          docker rmi taewakim/need_frontend_server:latest
+          docker image pull taewakim/need_frontend_server:latest
+          docker run -dp 3000:3000 --name frontend_server taewakim/need_frontend_server:latest
