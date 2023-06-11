@@ -11,7 +11,7 @@ function Filter({setFilter}) {
     const [benefit, setBenefit] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/conditions")
+        axios.get("http://3.39.194.43:8080/conditions")
             .then((response) => {
                 const arrJob = [];
                 const arrBenefit = [];
