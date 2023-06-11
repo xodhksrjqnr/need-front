@@ -41,6 +41,8 @@ function PostList({postListApi}) {
                     if (!(postNum.current === 0 && len === 0)) {
                         $('#postIsNotExist').css('display', 'none');
                     }
+            }).catch((err) => {
+                console.log("err");
             });
         }
         // eslint-disable-next-line
