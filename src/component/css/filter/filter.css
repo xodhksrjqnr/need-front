@@ -1,0 +1,45 @@
+.filter {
+    width: 100%;
+    padding: 10px 0 50px 0;
+    background-color: #5A5AFF;
+    display: none;
+}
+
+.filter div {
+    padding: 0 100px 0 100px;
+    margin-bottom: 50px;
+}
+
+.filter p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.activeButton {
+    background-color: #5A5AFF;
+    border: solid white;
+    border-radius: 9999px;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inactiveButton {
+    background-color: white;
+    border: solid white;
+    border-radius: 9999px;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    color: #5A5AFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inactiveButton:hover {
+    background-color: #D2D2FF;
+}

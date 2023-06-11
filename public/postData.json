@@ -1,0 +1,98 @@
+[
+  {
+    "postId": 1,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-04-19T16:06:20",
+    "createdDate": null
+  },
+  {
+    "postId": 2,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-18T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 3,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-19T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 4,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-20T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 5,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-21T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 6,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-22T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 7,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-17T03:24:00",
+    "createdDate": null
+  },
+  {
+    "postId": 8,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습", "남성", "서울시", "종로구", "대학생", "학습", "남성", "서울시", "종로구"
+    ],
+    "status": "공개",
+    "closingDate": "2023-05-17T03:24:00",
+    "createdDate": null
+  }
+]

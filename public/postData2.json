@@ -1,0 +1,14 @@
+[
+  {
+    "postId": 1,
+    "title": "국가장학금",
+    "thumbnail": "https://www.gangnam.go.kr/upload/editor/2020/02/04/d7bc119e-f734-45ca-8fe9-9886714d68a9.jpg",
+    "url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+    "conditions": [
+      "대학생", "학습"
+    ],
+    "status": "공개",
+    "closingDate": "2023-04-19T16:06:20",
+    "createdDate": null
+  }
+]
