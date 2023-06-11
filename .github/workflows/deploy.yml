@@ -54,7 +54,7 @@ jobs:
           tags: taewakim/need_front_server:latest
 
   deploy:
-    runs-on: [ self-hosted, label-go ]
+    runs-on: [ self-hosted, label-go2 ]
     needs: build
     
     steps:
