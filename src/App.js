@@ -8,7 +8,7 @@ function App() {
     const filter = useRef(['', '', '', '', '', '']);
 
     const setFilter = (index, condition) => {filter.current[index] = condition};
-    const [postListApi, setPostListApi] = useState('http://localhost:8080/posts?');
+    const [postListApi, setPostListApi] = useState('http://43.202.1.59:8080/posts?');
 
     const setSearchApi = () => {
         let district = (filter.current[0] === '' ? '' : filter.current[0]) +
