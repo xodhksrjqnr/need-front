@@ -1,5 +1,4 @@
 import "../css/post.css";
-import Timer from "./Timer";
 
 function Post({post}) {
     return (
@@ -12,7 +11,6 @@ function Post({post}) {
             </div>
             <div className="bottom">
                 <div>{post.title}</div>
-                <Timer dateTime={post.closingDate}/>
                 {post.conditions.map(c => <span key={c}>{c}</span>)}
             </div>
         </div>
