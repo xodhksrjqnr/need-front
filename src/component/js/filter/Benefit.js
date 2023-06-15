@@ -12,13 +12,6 @@ function Benefit({benefit, setFilter}) {
     return (
         <div>
             <p>지원 종류</p>
-            <Button
-                key="지원종류무관"
-                className={(cur === '무관' ? "activeButton" : "inactiveButton")}
-                onClick={() => setCondition('무관')}
-            >
-                무관
-            </Button>
             {benefit.map(b =>
                 <Button
                     key={b}

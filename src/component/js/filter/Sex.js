@@ -14,13 +14,6 @@ function Sex({setFilter}) {
         <div>
             <p>성별</p>
             <Button
-                id="무관"
-                className={cur === '무관' ? "activeButton" : "inactiveButton"}
-                onClick={() => setCondition('무관')}
-            >
-                무관
-            </Button>
-            <Button
                 id="남성"
                 className={cur === '남성' ? "activeButton" : "inactiveButton"}
                 onClick={() => setCondition('남성')}

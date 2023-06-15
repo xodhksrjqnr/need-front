@@ -12,13 +12,6 @@ function Job({job, setFilter}) {
     return (
         <div>
             <p>직업</p>
-            <Button
-                key="직업무관"
-                className={(cur === '무관' ? "activeButton" : "inactiveButton")}
-                onClick={() => setCondition('무관')}
-            >
-                무관
-            </Button>
             {job.map(j =>
                 <Button
                     key={j}
