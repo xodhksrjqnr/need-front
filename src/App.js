@@ -22,7 +22,7 @@ function App() {
         let search = (value === '' ? '' : 'search=' + value + '&');
         let conditions = district + benefit + job + sex + search;
 
-        setPostListApi('http://localhost:8080/posts?' + conditions);
+        setPostListApi('http://43.202.1.59:8080/posts?' + conditions);
     };
 
     return (
