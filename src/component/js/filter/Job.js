@@ -15,7 +15,7 @@ function Job({job, setFilter}) {
             {job.map(j =>
                 <Button
                     key={j}
-                    className={(cur === j ? "activeButton" : "inactiveButton")}
+                    className={(cur === j ? "active button" : "inactive button")}
                     onClick={() => setCondition(j)}
                 >
                     {j}

@@ -1,14 +1,34 @@
+@media screen and (min-width: 541px) {
+    .left {
+        padding-left: 20px;
+    }
+
+    .right {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .left {
+        padding-left: 5px;
+        margin: auto;
+    }
+
+    .right {
+        padding-right: 5px;
+    }
+}
+
 .header {
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: #5A5AFF;
     display: flex;
 }
 
 .left {
-    text-align: left;
-    width: 20%;
-    padding-left: 20px;
+    margin: auto;
+    width: 30%;
 }
 
 .middle {
@@ -17,39 +37,32 @@
 }
 
 .right {
+    margin: auto;
     text-align: right;
-    padding-right: 20px;
-    width: 30%;
+    width: 20%;
 }
 
 .header button {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    aspect-ratio: 1/1;
     border-radius: 9999px;
     border: 2px solid white;
     background-color: #5A5AFF;
     position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
+    margin: auto;
 }
 
 #logo {
-    width:150px;
-    height:100%;
-}
-
-#menu {
-    width:100%;
-    height:100%;
-}
-
-.middle .searchButton {
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
+    width: 100%;
+    height: 40px;
 }
 
 #searchIcon {
-    width: 100%;
-    height: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+#menu {
+    width: 15px;
+    height: 15px;
 }

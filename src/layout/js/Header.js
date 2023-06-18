@@ -21,7 +21,7 @@ function Header({setSearchApi}) {
             </div>
             <div className="middle">
                 <Search/>
-                <Button className="searchButton">
+                <Button>
                     <Image id="searchIcon" src={SearchIcon} alt="조회이미지" onClick={setSearchApi}/>
                 </Button>
             </div>

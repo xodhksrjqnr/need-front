@@ -64,7 +64,7 @@ function District({setFilter}) {
                 {PROVINCE_LIST.map(province =>
                     <Button
                         key={province}
-                        className={(curProvince === province ? "activeButton" : "inactiveButton")}
+                        className={(curProvince === province ? "active button" : "inactive button")}
                         onClick={() => fixProvince(province)}
                     >
                         {province}
@@ -75,7 +75,7 @@ function District({setFilter}) {
                 {districtList.map(district =>
                     <Button
                         key={district}
-                        className={(curDistrict === district ? "activeButton" : "inactiveButton")}
+                        className={(curDistrict === district ? "active button" : "inactive button")}
                         onClick={() => fixDistrict(district)}
                     >
                         {district}
@@ -86,7 +86,7 @@ function District({setFilter}) {
                 {areaList.map(area =>
                     <Button
                         key={area}
-                        className={(curArea === area ? "activeButton" : "inactiveButton")}
+                        className={(curArea === area ? "active button" : "inactive button")}
                         onClick={() => fixArea(area)}
                     >
                         {area}

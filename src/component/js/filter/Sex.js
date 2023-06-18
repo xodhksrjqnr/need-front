@@ -15,21 +15,21 @@ function Sex({setFilter}) {
             <p>성별</p>
             <Button
                 id="무관"
-                className={cur === '무관' ? "activeButton" : "inactiveButton"}
+                className={cur === '무관' ? "active button" : "inactive button"}
                 onClick={() => setCondition('무관')}
             >
                 무관
             </Button>
             <Button
                 id="남성"
-                className={cur === '남성' ? "activeButton" : "inactiveButton"}
+                className={cur === '남성' ? "active button" : "inactive button"}
                 onClick={() => setCondition('남성')}
             >
                 남성
             </Button>
             <Button
                 id="여성"
-                className={cur === '여성' ? "activeButton" : "inactiveButton"}
+                className={cur === '여성' ? "active button" : "inactive button"}
                 onClick={() => setCondition('여성')}
             >
                 여성

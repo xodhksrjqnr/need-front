@@ -15,7 +15,7 @@ function Benefit({benefit, setFilter}) {
             {benefit.map(b =>
                 <Button
                     key={b}
-                    className={(cur === b ? "activeButton" : "inactiveButton")}
+                    className={(cur === b ? "active button" : "inactive button")}
                     onClick={() => setCondition(b)}
                 >
                     {b}

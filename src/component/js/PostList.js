@@ -30,7 +30,6 @@ function PostList({postListApi}) {
                     const len = response.data.length;
 
                     response.data.forEach(p => {
-                        console.log(p);
                         if (p.closingDate === null || (curDate < new Date(p.closingDate)))
                             arrPost.push(p)
                     });
