@@ -1,15 +1,3 @@
-@media screen and (min-width: 1001px){
-
-}
-
-@media screen and (min-width: 541px) and (max-width: 1000px) {
-
-}
-
-@media screen and (max-width: 540px) {
-
-}
-
 input {
     width: 80%;
     height: 30px;
