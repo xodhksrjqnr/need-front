@@ -34,7 +34,7 @@ function Timer({dateTime}) {
     }, [time])
 
     return (
-        <p id="timer">{time}</p>
+        <div id="timer">{time}</div>
     );
 }
 

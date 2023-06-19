@@ -5,8 +5,6 @@ import "./district/AreaData";
 import {Button} from "react-bootstrap";
 import {useState} from "react";
 
-import "../../css/filter/district.css";
-
 import PROVINCE_LIST from "./district/ProvinceData";
 import DISTRICT_LIST from "./district/DistrictData";
 import AREA_LIST from "./district/AreaData";
