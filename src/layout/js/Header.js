@@ -12,6 +12,9 @@ function Header({setSearchApi}) {
         let value = filter.css('display') === 'none' ? 'block' : 'none';
 
         filter.css('display', value);
+        if (value === 'none') {
+            setSearchApi();
+        }
     }
 
     return (
