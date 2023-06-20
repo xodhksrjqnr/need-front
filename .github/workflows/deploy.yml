@@ -4,14 +4,12 @@ on:
   pull_request:
     branches:
       - main
-      - develop
     paths-ignore:
       - 'README.md'
       
   push:
     branches:
       - main
-      - develop
     paths-ignore:
       - 'README.md'
       
@@ -64,3 +62,12 @@ jobs:
           docker rmi taewakim/need_frontend_server:latest
           docker image pull taewakim/need_frontend_server:latest
           docker run -dp 3000:3000 --name frontend_server taewakim/need_frontend_server:latest
+      
+      - name: Send messages to Slack
+        uses: 8398a7/action-slack@v3
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}
+          author_name: Need-Front Deploy
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
