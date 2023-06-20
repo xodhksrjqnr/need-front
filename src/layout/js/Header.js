@@ -1,4 +1,4 @@
-import {Button, Image} from "react-bootstrap";
+import {Image} from "react-bootstrap";
 import "../css/header.css";
 import $ from 'jquery';
 import { ReactComponent as Logo } from "../../svg/needlog.svg";
@@ -24,14 +24,14 @@ function Header({setSearchApi}) {
             </div>
             <div className="middle">
                 <Search/>
-                <Button>
+                <button>
                     <Image id="searchIcon" src={SearchIcon} alt="조회이미지" onClick={setSearchApi}/>
-                </Button>
+                </button>
             </div>
             <div className="right">
-                <Button>
+                <button>
                     <Image id="menu" src={Menu} alt="메뉴이미지" onClick={openFilter}/>
-                </Button>
+                </button>
             </div>
         </div>
     )

@@ -42,7 +42,7 @@
     border: 2px solid white;
     background-color: #5A5AFF;
     position: relative;
-    margin: auto;
+    margin: auto auto auto 0px;
 }
 
 #logo {
@@ -53,9 +53,11 @@
 #searchIcon {
     width: 15px;
     height: 15px;
+    display: block;
 }
 
 #menu {
     width: 15px;
     height: 15px;
+    display: block;
 }
