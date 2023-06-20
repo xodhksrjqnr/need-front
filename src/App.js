@@ -6,8 +6,6 @@ import PostList from "./component/js/PostList";
 
 function App() {
     const filter = useRef(['', '', '', '', '', '']);
-
-    const setFilter = (index, condition) => {filter.current[index] = condition};
     const [postListApi, setPostListApi] = useState('http://43.202.1.59:8080/posts?');
 
     const setSearchApi = () => {
@@ -23,6 +21,11 @@ function App() {
         let conditions = district + benefit + job + sex + search;
 
         setPostListApi('http://43.202.1.59:8080/posts?' + conditions);
+    };
+
+    const setFilter = (index, condition) => {
+        filter.current[index] = condition;
+        setSearchApi();
     };
 
     return (
