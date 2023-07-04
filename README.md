@@ -24,3 +24,7 @@ Open URL : http://13.124.215.170:3000
 - AWS EC2를 이용한 클라우드 서비스 운영
 - Docker, Github Actions를 이용한 빌드 및 배포 자동화
 - Github Actions, Slack을 이용한 빌드 및 배포 완료 알림
+
+## 구조
+
+<img width="703" alt="스크린샷 2023-07-04 오후 2 44 22" src="https://github.com/xodhksrjqnr/need-backend/assets/48250370/0da50682-0ec2-46c5-a4df-15a76ebbc9ac">
