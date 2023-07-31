@@ -3,10 +3,11 @@ import Header from './layout/js/Header';
 import {useRef, useState} from "react";
 import Filter from "./component/js/filter/Filter";
 import PostList from "./component/js/PostList";
+import {apiData} from "./Data";
 
 function App() {
     const filter = useRef(['', '', '', '', '', '']);
-    const [postListApi, setPostListApi] = useState('http://43.202.1.59:8080/posts?');
+    const [postListApi, setPostListApi] = useState(apiData.backend + '/posts?');
 
     const setSearchApi = () => {
         let district = (filter.current[0] === '' ? '' : filter.current[0]) +
@@ -20,7 +21,7 @@ function App() {
         let search = (value === '' ? '' : 'search=' + value + '&');
         let conditions = district + benefit + job + sex + search;
 
-        setPostListApi('http://43.202.1.59:8080/posts?' + conditions);
+        setPostListApi(apiData.backend + '/posts?' + conditions);
     };
 
     const setFilter = (index, condition) => {

@@ -5,13 +5,14 @@ import Job from "./Job";
 import Benefit from "./Benefit";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {apiData} from "../../../Data";
 
 function Filter({setFilter}) {
     const [job, setJob] = useState([]);
     const [benefit, setBenefit] = useState([]);
 
     useEffect(() => {
-        axios.get("http://43.202.1.59:8080/conditions")
+        axios.get(apiData.backend + "/conditions")
             .then((response) => {
                 const arrJob = [];
                 const arrBenefit = [];

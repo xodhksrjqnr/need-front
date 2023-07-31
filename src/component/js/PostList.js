@@ -4,11 +4,12 @@ import axios from "axios";
 import Post from "./Post";
 import { useInView } from 'react-intersection-observer';
 import $ from "jquery";
+import {apiData} from "../../Data";
 
 function PostList({postListApi}) {
     const [posts, setPosts] = useState([]);
     const postNum = useRef(0);
-    const prePostListApi = useRef('http://43.202.1.59:8080/posts?');
+    const prePostListApi = useRef(apiData.backend + '/posts?');
     const [ref, inView] = useInView({threshold:0.2});
 
     useEffect(() => {
