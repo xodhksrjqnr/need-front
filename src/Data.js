@@ -1,3 +1,3 @@
 export const apiData = {
-    backend:"http://113.30.39.238:8080"
+    backend:"http://13.125.196.92:8080"
 }
